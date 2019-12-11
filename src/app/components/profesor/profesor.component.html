@@ -1,38 +1,80 @@
-<p>profesor works!</p>
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <table class="table table-notas" style="margin-top: 40px !important">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Asignatura</th>
-                <th scope="col">Notas</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Profesor</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Programación</th>
-                <td>2.0</td>
-                <td>25/09/2019</td>
-                <td>Joan</td>
-                
-              </tr>
-              <tr>
-                <th scope="row">Programación</th>
-                <td>3.0</td>
-                <td>25/09/2019</td>
-                <td>Joan</td>
-              </tr>
-              <tr>
-                <th scope="row">Programación</th>
-                <td>5.0</td>
-                <td>25/09/2019</td>
-                <td>Joan</td>
-              </tr>
-            </tbody>
-        </table>        
-    </div>
-    <div class="col-md-2"></div>
+<html>
+<!-- row: Filas de bootstrap -->
+  <div class="row" style="margin: 0px; padding:0px;"> 
+  <!-- col: Columnas de Bootstrap. máximo 12 por fila -->
+  <div class="col-6 login-pane" aling="center">
+      <!-- espacio izquiedo para la barra desplegable -->
+      <form>
+        
+          <div>
+
+              </div>
+              
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Profesor: Nombre Apellido">
+              </div>
+              <div>
+                  <button type="button" class="btn btn-danger">Asistencia</button>    
+              </div>
+      </form>
+  </div>
+  <div class="col-6" aling="right">
+
+      <!-- Tabla es -->
+      
+      <div>
+          <button type="button" class="btn btn-primary btn-lg">Guardar Curso</button>
+      
+          <button type="button" class="btn btn-primary btn-lv">Ver cursos</button>
+      </div>
+      <div>
+
+      </div>
+      <div></div>
+      <div></div>
+
+                  <div class="row"style="left:500px;">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-8">
+                          <table class="table table-notas" style="margin-top: 40px !important">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">Asignatura</th>
+                                  <th scope="col">Nota</th>
+                                  <th scope="col">Fecha</th>
+                                  <th scope="col">Profesor</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Programación</th>
+                                  <td>2.0</td>
+                                  <td>25/09/2019</td>
+                                  <td>Denis Lamela</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <th scope="row">Programación</th>
+                                  <td>3.0</td>
+                                  <td>25/09/2019</td>
+                                  <td>Vale</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Programación</th>
+                                  <td>5.0</td>
+                                  <td>25/09/2019</td>
+                                  <td>Pricilla</td>
+                                </tr>
+                              </tbody>
+                          </table>        
+                      </div>
+                      
+                  </div>
+  
+              </div>
+      </div>
+    <div>
+      
+      <button type="button" class="btn btn-info">Info Alumnos</button>
 </div>
+</html>
