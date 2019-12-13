@@ -8,12 +8,48 @@
     padding-left: 40px;
     padding-right: 10px;
     top: 50px;
+    left: 0px;
+    right: 10px;
+   
+}
+
+.btnbtn-danger{
+
+    left: 40px;
+    right: 10px;
+    top: 500px;
 
 }
 .col-6{
-
     padding-left: 50px;
     padding-right: 10px;
     top: 50px;
+    left: 50px;
+    right: 0px;
+    top: 50px;
 
+}
+.btnbtn-primarybtn-lg{
+
+    left: 100px;
+    right: 0px;
+    top: 100px;
+}
+.btnbtn-primarybtn-lv{
+
+    left: 70px;
+    right: 10px;
+    top: 50px;
+}
+
+.table-notas{
+    left: 0px;
+    right: 80px;
+    top: 40px;
+}
+.row{
+
+    left: 800px;
+    right: 0;
+    top: 40px;
 }
