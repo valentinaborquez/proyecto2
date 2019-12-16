@@ -7,13 +7,19 @@ import { ListalumnosComponent } from './components/listalumnos/listalumnos.compo
 import { InicioComponent } from './components/inicio/inicio.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { ProfesorComponent } from './components/profesor/profesor.component';
+import { CursoComponent } from './curso/curso.component';
+import { CursoalumnoComponent } from './cursoalumno/cursoalumno.component';
+
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'listalumnos', component: ListalumnosComponent },
   { path: 'profesor', component: ProfesorComponent },
-  { path: 'registro', component: RegistroComponent }
+  { path: 'registro', component: RegistroComponent },
+  { path: 'curso', component: CursoComponent },
+  { path: 'cursoalumno', component: CursoalumnoComponent }
+ 
 ];
 @NgModule({
   declarations: [
@@ -22,7 +28,9 @@ const appRoutes: Routes = [
     ListalumnosComponent,
     InicioComponent,
     RegistroComponent,
-    ProfesorComponent
+    ProfesorComponent,
+    CursoComponent,
+    CursoalumnoComponent
   ],
   imports: [
     RouterModule.forRoot(
