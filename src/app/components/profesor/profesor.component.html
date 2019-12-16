@@ -1,83 +1,92 @@
-<html>
-  <head>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-       <li class="breadcrumb-item"><a href="#">Home</a></li>
-       <li class="breadcrumb-item"><a href="#">Login</a></li>
-       <!--<li class="breadcrumb-item active" aria-current="page">Sign Up</li> -->
-      </ol>
-  </nav>
-  </head>
-<!-- row: Filas de bootstrap -->
-  <div class="row" style="margin: 0px; padding:0px;"> 
-  <!-- col: Columnas de Bootstrap. máximo 12 por fila -->
-  <div class="col-6 login-pane" aling="center">
-      <!-- espacio izquiedo para la barra desplegable -->
-      <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Profesor: Nombre Apellido">
-              </div>
-              <div>
-                  <button type="button" class="btn btn-danger">Asistencia</button>    
-              </div>
-      </form>
-  </div>
-  <div class="col-6" aling="right">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profesor</title>
+</head>
+<body>
+    <ul class="nav nav-tabs bg-dark">
+        <li class="nav-item">
+          <a class="nav-link active" href="/inicio">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/inicio">Salir</a>
+        </li>
+      </ul>
+      <br>
 
-      <!-- Tabla es -->
-      
-      <div>
-          <button type="button" class="btn btn-primary btn-lg">Guardar Curso</button>
-      
-          <button type="button" class="btn btn-primary btn-lv">Ver cursos</button>
-      </div>
-      <div>
-
-      </div>
-      <div></div>
-      <div></div>
-      <div class="row"style="left:500px;">
-                      <div class="col-md-2"></div>
-                      <div class="col-md-8">
-                          <table class="table table-notas" style="margin-top: 40px !important">
-                              <thead class="thead-dark">
-                                <tr>
-                                  <th scope="col">Asignatura</th>
-                                  <th scope="col">Nota</th>
-                                  <th scope="col">Fecha</th>
-                                  <th scope="col">Profesor</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">Programación</th>
-                                  <td>2.0</td>
-                                  <td>25/09/2019</td>
-                                  <td>Denis Lamela</td>
-                                  
-                                </tr>
-                                <tr>
-                                  <th scope="row">Programación</th>
-                                  <td>3.0</td>
-                                  <td>25/09/2019</td>
-                                  <td>Vale</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">Programación</th>
-                                  <td>5.0</td>
-                                  <td>25/09/2019</td>
-                                  <td>Pricilla</td>
-                                </tr>
-                              </tbody>
-                          </table>        
-                      </div>
-                      
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cursos
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="curso">PTF</a>
+                      <a class="dropdown-item" href="#">MARKETING DIGITAL</a>
+                    </div>
                   </div>
-  
+            </div>
+            <div class="col-sm-2">
+                <p>Bienvenido PROFESOR</p>
+            </div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                
+                      <input type="text" class="form-control" id="ncurso" placeholder="Nuevo Curso">
+                      <label for="crearcurso" class="sr-only">Crear Curso</label>
+ 
+                </div>
+                           
+                      <button type="submit" class="btn btn-primary">Crear</button>
+                    
+                   
+                  </form>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+              <table class="table table-hover table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">Cursos</th>
+                      <th scope="col">Materia</th>
+                      <th scope="col">Materia</th>
+                      <th scope="col">Materia</th>
+                      <th scope="col">Materia</th>
+                      <th scope="col">Materia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">PTF</th>
+                      <td>TYPE SCRIPT</td>
+                      <td>JAVA</td>
+                      <td>HTML</td>
+                      <td>HABILIDADES BLANDAS</td>
+                      <td>C++</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MARKETING DIGITAL</th>
+                        <td>FOTOGRAFIA</td>
+                        <td>CONTABILIDAD</td>
+                        <td>PHOTOSHOP</td>
+                        <td>ADMINISTRACIÓN</td>
+                        <td>PAISAJISMO</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
               </div>
-      </div>
-    <div>
-      
-      <button type="button" class="btn btn-info">Info Alumnos</button>
-</div>
+        </div>
+     
+</body>
 </html>
